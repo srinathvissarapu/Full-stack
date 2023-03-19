@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
+	fmt.Printf("The square root of %d is %g.\n", 25, math.Sqrt(25))
 }
