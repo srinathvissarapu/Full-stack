@@ -7,5 +7,11 @@ func add(x, y int) int {
 }
 
 func main() {
-	fmt.Println(add(42, 13))
+	
+	result1 := add(5, 7)
+	result2 := add(11, 22)
+
+	
+	fmt.Printf("Result 1: %d\n", result1)
+	fmt.Printf("Result 2: %d\n", result2)
 }
