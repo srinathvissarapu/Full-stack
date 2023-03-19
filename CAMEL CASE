@@ -1,0 +1,40 @@
+package main
+
+import (
+	"fmt"
+	"unicode"
+)
+
+func isCamelCase(s string) bool {
+	
+	if len(s) > 0 && !unicode.IsLower(rune(s[0])) {
+		return false
+	}
+
+	
+	for _, r := range s {
+		if !unicode.IsLetter(r) {
+			return false
+		}
+	}
+
+	
+	for _, r := range s {
+		if unicode.IsUpper(r) {
+			return true
+		}
+	}
+
+	
+	return false
+}
+
+func main() {
+	str1 := "srinath"
+	str2 := "notSrinath"
+	str3 := "VISSARAPU"
+
+	fmt.Printf("%s is camel case: %v\n", str1, isCamelCase(str1))
+	fmt.Printf("%s is camel case: %v\n", str2, isCamelCase(str2))
+	fmt.Printf("%s is camel case: %v\n", str3, isCamelCase(str3))
+}
