@@ -7,6 +7,11 @@ func swap(x, y string) (string, string) {
 }
 
 func main() {
-	a, b := swap("hello", "world")
+	// Call the swap function with different values
+	a, b := swap("hii", "srinath")
+	c, d := swap("alpha", "beta")
+
+	// Print the results
 	fmt.Println(a, b)
+	fmt.Println(c, d)
 }
