@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-const Pi = 3.14
+const Pi = 3.14159
 
 func main() {
-	const World = "世界"
+	const World = "Universe"
 	fmt.Println("Hello", World)
 	fmt.Println("Happy", Pi, "Day")
 
-	const Truth = true
+	const Truth = false
 	fmt.Println("Go rules?", Truth)
 }
