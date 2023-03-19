@@ -3,11 +3,17 @@ package main
 import "fmt"
 
 func split(sum int) (x, y int) {
-	x = sum * 4 / 9
+	x = sum * 3 / 5
 	y = sum - x
 	return
 }
 
 func main() {
-	fmt.Println(split(17))
+	
+	a, b := split(100)
+	c, d := split(50)
+
+	
+	fmt.Println(a, b)
+	fmt.Println(c, d)
 }
